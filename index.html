@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭЭЭ с новым годом</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            background-image: url('3755.jpg'); /* Укажите путь к изображению */
+            background-size: cover; /* Для растяжения изображения на весь экран */
+            background-repeat: no-repeat; /* Чтобы фон не повторялся */
+            
+        }
+        .container {
+            text-align: center;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .caption {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
+        
+    </style>
+</head>
+<body>
+    <button id="playButton">НАЖАЛ ЗАРЖАЛ </button>
+    <audio id="myAudio" src="Звук Таджикистан.mp3"></audio>
+    <button id="playButton1">куку  </button>
+    <audio id="myAudio1" src="SteosVoice 744561.mp3"></audio>
+    
+<div class="container">
+    <img src="your-image.jpg" alt="Пример изображения" class="fade-in" width="400" height="500">
+    <div> </div>
+    <font color="red">Артур с нвым годом чтобы жопа не болела и ты не болел</font>
+</div>
+
+<script>
+    // Добавляем класс для анимации после загрузки страницы
+    window.onload = function() {
+        const elements = document.querySelectorAll('.fade-in');
+        elements.forEach(element => {
+            element.classList.add('fade-in');
+        });
+    };
+
+    document.getElementById('playButton').addEventListener('click', function() {
+        var audio = document.getElementById('myAudio');
+        audio.play();
+    });
+    document.getElementById('playButton1').addEventListener('click', function() {
+        var audio = document.getElementById('myAudio1');
+        audio.play();
+    });
+</script>
+
+</body>
+</html>
+
